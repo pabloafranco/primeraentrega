@@ -11,7 +11,7 @@
         <title>Registro</title>
     </head>
 
-<body>
+<body class="bg-black">
     <div class="contenedor">
     <header>
         <div class="logo">
@@ -30,31 +30,48 @@
     </header>
 
     <form>
-        <div class="form-group"> 
-        <fieldset>
+        <div class="container mx-auto" style="width: 1200px;"> 
+        <fieldset >
             <legend>Registro de Usuario:</legend>
-            <label for="fname">First name:</label>
-            <input type="text" id="fnameID" name="fname"><br><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lnameID" name="lname"><br><br>
-            <label for="email">Email (*obligatorio):</label>
-            <input type="email" id="emailID" name="email" required><br><br>
-            
-            <label for="username">Username (*obligatorio):</label>
-            <input type="text" id="usernameID" name="username" required><br><br>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="passwordID" name="password" required><br><br>
-            
-            <!-- Vamos a validar con JS mientras se escribe -->
-            <label for="repeatpassword">Repeat Password:</label>
-            <input type="password" id="RpasswordID" name="repeatpassword" required><br><br>
-            
+            <div class="row">
+                <div class="col">
+                    <label for="fname">Nombre:</label>
+                    <input type="text" id="fnameID" name="fname"><br><br>
+                </div>
+                <div class="col">
+                <label for="lname">Apellido:</label>
+                <input type="text" id="lnameID" name="lname"><br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                     <label for="email">Email (*obligatorio):</label>
+                      <input type="email" id="emailID" name="email" required><br><br>
+                 </div>
+                 <div class="col">
+                <label for="birthday">Fecha de cumpleaños:</label>
+                <input type="date" id="birthdayID" name="birthday"><br><br>
+                </div>
+             </div>
+             <hr class="mb-4">
+             <div class="row mx-0">
+                <label for="username">Usuario (*obligatorio):</label>
+                <input type="text" id="usernameID" name="username" required><br><br>
+            </div>
+            <div class="row">
+                <div class="col">
+                <label for="password">Clave:</label>
+                <input type="password" id="passwordID" name="password" required><br><br>
+                </div>   
+                <div class="col">
+                <!-- Vamos a validar con JS mientras se escribe -->
+                <label for="repeatpassword">Repetir Clave:</label>
+                <input type="password" id="RpasswordID" name="repeatpassword" required><br><br>
+                </div>
+            </div>
     
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthdayID" name="birthday"><br><br>
             
-            <input type="submit" value="Submit">
+            <button type="submit">Enviar</button>
         </fieldset>
         </div> 
     </form>
