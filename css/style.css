@@ -108,8 +108,9 @@ footer {
 	margin-bottom: 20px;
 	max-width:1200px;
 
-	position: absolute;
-	bottom: 0;bottom: 0;
+	Position: fixed;
+	bottom: 0;
+
 
 	/* Flexbox */
 	display: flex;
